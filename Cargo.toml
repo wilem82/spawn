@@ -1,0 +1,13 @@
+[package]
+name = "spawn"
+version = "0.1.0"
+authors = ["Yuri Geinish <wilemyvu@gmail.com>"]
+edition = "2018"
+description = "Spawn a process without waiting for it to finish"
+
+[profile.release]
+opt-level = 'z'
+lto = true
+codegen-units = 1
+
+[dependencies]
